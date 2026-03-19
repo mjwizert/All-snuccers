@@ -1,2 +1,531 @@
-# All-snuccers
-All you want 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Business</title>
+
+<style>
+.social {
+  padding: 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+}
+
+.reactions button {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  background: white;
+  color: #333;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reactions button:hover {
+  background: #ff9800;
+  color: white;
+  transform: scale(1.1);
+}
+
+#commentInput {
+  padding: 12px;
+  width: 60%;
+  border-radius: 20px;
+  border: none;
+  margin-top: 15px;
+}
+
+.social button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+li {
+  background: white;
+  color: #333;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 20px;
+  width: 60%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f4f4;
+}
+
+/* Header */
+
+header{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* Navigation */
+
+nav{
+background:#222;
+display:flex;
+justify-content:center;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:orange;
+}
+
+/* Hero Section */
+
+.hero{
+height:400px;
+background:url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:orange;
+color:white;
+font-size:18px;
+border-radius:5px;
+}
+
+/* Services */
+
+.services{
+padding:50px;
+text-align:center;
+background:white;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:30px;
+}
+
+.card{
+background:#f4f4f4;
+padding:25px;
+width:250px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+/* About */
+
+.about{
+padding:50px;
+text-align:center;
+}
+
+/* Contact */
+
+.contact{
+padding:50px;
+background:white;
+text-align:center;
+}
+
+input, textarea{
+width:80%;
+padding:10px;
+margin:10px;
+}
+
+button.submit{
+padding:12px 30px;
+background:orange;
+border:none;
+color:white;
+}
+
+/* Footer */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+.follow {
+  padding: 60px;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+.social-buttons a {
+  display: inline-block;
+  margin: 15px;
+  padding: 14px 30px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.instagram {
+  background: #e1306c;
+}
+
+.telegram {
+  background: #0088cc;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+.hero {
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+background:url("myphoto.jpg") center/cover;
+.slideshow {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact-links {
+  padding: 50px;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+.contact-links a {
+  display: block;
+  margin: 10px;
+  color: orange;
+  font-size: 18px;
+  text-decoration: none;
+}
+.hero {
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1603297631959-3f6f76aa87e7") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.social {
+  padding: 60px;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1574629810360-7efbbe195018") center/cover;
+  color: white;
+}
+
+.reactions button {
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  background: gold;
+  color: black;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+li {
+  background: white;
+  color: black;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+}
+.social {
+  padding: 60px;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1616531770192-6eaea74c2456") center/cover no-repeat;
+  color: white;
+}
+</style>
+</head>
+<a href="https://wa.me/+237653416771" target="_blank"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+">
+Chat on WhatsApp
+</a>
+<body>
+
+<header>
+<h1>Godlove Business</h1>
+<p>Professional Services</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+<h1>Grow Your Business With Us</h1>
+<p>Professional and reliable services</p>
+<button>Get Started</button>
+</section>
+
+<section class="services">
+  
+  <h2>Our Products</h2>
+  
+  <div class="cards">
+    
+    <div class="card">
+      <h3>Snooker Tables</h3>
+      <p>High quality classic snooker tables.</p>
+    </div>
+    
+    <div class="card">
+      <h3>Snooker Cues</h3>
+      <p>Professional cues for best performance.</p>
+    </div>
+    
+    <div class="card">
+      <h3>Accessories</h3>
+      <p>Balls, chalk, covers and more.</p>
+    </div>
+    
+  </div>
+  
+</section>
+</div>
+
+<div class="card">
+<h3>Digital Marketing</h3>
+<p>Grow your audience and reach more customers.</p>
+</div>
+
+<div class="card">
+<h3>Consulting</h3>
+<p>Helping businesses succeed online.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+<h2>About Us</h2>
+<p>
+We help businesses grow using modern technology and smart solutions.
+</p>
+</section>
+
+<section class="contact">
+<h2>Contact Us</h2>
+
+<input type="text" placeholder="Your Name"><br>
+<input type="email" placeholder="Your Email"><br>
+<textarea placeholder="Your Message"></textarea><br>
+
+<button class="submit">Send Message</button>
+
+</section>
+
+<footer>
+<p>© 2026 Godlove Business</p>
+</footer>
+<div class="slideshow">
+  
+  <img id="slide" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+  
+</div>
+</body>
+<script>
+
+let images = [
+"https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+"https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+"https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+]
+
+let i = 0
+
+setInterval(()=>{
+i++
+if(i >= images.length) i = 0
+document.getElementById("slide").src = images[i]
+},3000)
+
+</script>
+</html>
+<section class="social">
+  
+  <h2>Community</h2>
+  
+  <div class="reactions">
+    
+    <button onclick="like()">👍 Like <span id="likeCount">0</span></button>
+    
+    <button onclick="love()">❤️ Love <span id="loveCount">0</span></button>
+    
+  </div>
+  
+  <h3>Comments</h3>
+  
+  <input id="commentInput" placeholder="Write a comment">
+  
+  <button onclick="addComment()">Post</button>
+  
+  <ul id="commentList"></ul>
+  
+</section>
+<script>
+
+let likeCount = 0
+let loveCount = 0
+
+function like(){
+likeCount++
+document.getElementById("likeCount").innerText = likeCount
+}
+
+function love(){
+loveCount++
+document.getElementById("loveCount").innerText = loveCount
+}
+
+function addComment(){
+
+let input = document.getElementById("commentInput")
+
+let comment = input.value
+
+if(comment === "") return
+
+let li = document.createElement("li")
+
+li.innerText = comment
+
+document.getElementById("commentList").appendChild(li)
+
+input.value=""
+
+}
+
+</script>
+<section class="social-links">
+  <section class="follow">
+  
+  <h2>Follow & Contact Me</h2>
+  
+  <div class="social-buttons">
+    
+    <a href="https://instagram.com/yourusername" target="_blank" class="instagram">Instagram</a>
+    
+    <a href="https://t.me/yourusername" target="_blank" class="telegram">Telegram</a>
+    
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp">WhatsApp</a>
+    
+  </div>
+  <section class="gallery">
+  
+  <h2>Our Products</h2>
+  
+  <img src="https://images.unsplash.com/photo-1603297631959-3f6f76aa87e7">
+  
+  <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018">
+  
+  <video controls width="300">
+    <source src="yourvideo.mp4" type="video/mp4">
+  </video>
+  
+</section>
+</section>
+  <h2>Connect With Me</h2>
+  
+  <div class="links">
+    
+    <a href="https://instagram.com/yourusername" target="_blank">📸 Instagram</a>
+    
+    <a href="https://t.me/yourusername" target="_blank">✈️ Telegram</a>
+    
+    <a href="https://wa.me/1234567890" target="_blank">💬 WhatsApp</a>
+    
+    <a href="mailto:youremail@email.com">📧 Email Me</a>
+    
+  </div>
+  
+</section>
