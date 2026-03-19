@@ -522,7 +522,7 @@ input.value=""
     
     <a href="https://t.me/yourusername" target="_blank">✈️ Telegram</a>
     
-    <a href="https://wa.me/1234567890" target="_blank">💬 WhatsApp</a>
+    <a href="https://wa.me/237653416771" target="_blank">💬 WhatsApp</a>
     
     <a href="mailto:youremail@email.com">📧 Email Me</a>
     
